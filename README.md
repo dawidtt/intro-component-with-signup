@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution](https://dawidtt.github.io/intro-component-with-signup/)
 
 ## My process
 
@@ -49,4 +49,4 @@ I learned how to validate forms using JavaScript
 
 ## Author
 
-- GitHub - [Dawitt](https://www.your-site.com)
+- GitHub - [Dawitt](https://github.com/dawidtt)
