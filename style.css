@@ -1,0 +1,187 @@
+/*
+========================================
+                SHARED CSS
+========================================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff7a7a;
+  background-image: url(./images/bg-intro-mobile.png);
+  text-align: center;
+  min-height: 100vh;
+}
+#price-container,
+form {
+  border-radius: 10px;
+}
+
+/*
+========================================
+            MAIN
+========================================
+*/
+main {
+  padding: 5%;
+}
+/*
+========================================
+            SECTION LEFT
+========================================
+*/
+#left {
+  color: #ffffff;
+  margin: 40px 0;
+}
+#left h1 {
+  margin: 0 5% 5% 5%;
+}
+#left p {
+  color: #f0f0f0;
+}
+/*
+========================================================
+                         SECTION RIGHT
+========================================================
+*/
+/*
+========================================
+            PRICE CONTAINER
+========================================
+*/
+#price-container {
+  background-color: #6055a5;
+  text-align: center;
+  padding: 5% 15%;
+  color: #f0f0f0;
+  margin-bottom: 10%;
+  -webkit-box-shadow: 0px 28px 0px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 28px 0px 0px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 0px 0px rgba(66, 68, 90, 0.2);
+}
+#price-container span {
+  font-weight: 700;
+  color: #ffffff;
+}
+/*
+========================================
+                 FORM
+========================================
+*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5% 0;
+  -webkit-box-shadow: 0px 28px 0px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 28px 0px 0px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 0px 0px rgba(66, 68, 90, 0.2);
+}
+input {
+  border: 1px solid #b9b6d3;
+  font-weight: 600;
+  opacity: 0.6;
+}
+input::placeholder {
+  font-weight: 600;
+  opacity: 0.5;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #b9b6d3;
+}
+button {
+  background-color: #38cc8c;
+  color: #f0f0f0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+  -webkit-box-shadow: 0px 28px 0px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 28px 0px 0px rgba(66, 68, 90, 1);
+  box-shadow: 0px 4px 0px 0px rgb(21, 171, 106);
+  text-transform: uppercase;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+input,
+button {
+  width: 90%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#terms-services {
+  margin-top: 2px;
+  width: 70%;
+  font-size: 0.7rem;
+  color: #b9b6d3;
+}
+#terms-services a {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+#terms-services a:hover {
+  cursor: pointer;
+}
+
+/*
+========================================
+              ERRORS
+========================================
+*/
+input.error {
+  border: 2px solid #ff7a7a;
+  opacity: 1;
+  background: url(./images/icon-error.svg) no-repeat right;
+  background-position-x: 95%;
+}
+input::placeholder.error {
+  color: #ff7a7a;
+  opacity: 1;
+}
+.error-message {
+  text-align: right;
+  font-size: 0.7rem;
+  color: #ff7a7a;
+  width: 90%;
+}
+
+@media (min-width: 576px) {
+  body {
+    max-height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+  #left {
+    flex-basis: 40%;
+    text-align: left;
+  }
+  #left h1 {
+    margin: 0 0 5% 0;
+    font-size: 3.5em;
+  }
+  #right {
+    flex-basis: 40%;
+  }
+  #price-container {
+    margin-bottom: 4%;
+    padding: 3% 2%;
+  }
+}
